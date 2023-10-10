@@ -4,7 +4,7 @@
 
 * Linux
 * Mysql
-* Php 8.2
+* Php 7.3+
 * Memcached
 * Nginx (Lighttpd and Apache optional)
 
