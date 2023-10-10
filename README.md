@@ -4,10 +4,9 @@
 
 * Linux
 * Mysql
-* Php 7.3
+* Php 8.2
 * Memcached
-* Nginx (Recommended)
-    - You can also use lighttpd or apache
+* Nginx
 
 <h2 align="left"> Configuration</h2>
 <h3 align="center">Nginx </h3>
