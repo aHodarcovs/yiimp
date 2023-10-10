@@ -6,7 +6,7 @@
 * Mysql
 * Php 8.2
 * Memcached
-* Nginx
+* Nginx (Lighttpd and Apache optional)
 
 <h2 align="left"> Configuration</h2>
 <h3 align="center">Nginx </h3>
@@ -97,7 +97,7 @@ All your coin's config files need to blocknotify their corresponding stratum usi
 
 	blocknotify=blocknotify yaamp.com:port coinid %s
 
-On the website, go to http://server.com/site/adminRights to login as admin. You have to change it to something different in the code (web/yaamp/modules/site/SiteController.php). A real admin login may be added later, but you can setup a password authentification with your web server, sample for lighttpd:
+On the website, go to http://server.com/site/AdminPortal to login as admin. You have to change it to something different in the code (web/yaamp/modules/site/SiteController.php). A real admin login may be added later, but you can setup a password authentification with your web server, sample for lighttpd:
 
 	htpasswd -c /etc/yiimp/admin.htpasswd <adminuser>
 
