@@ -430,21 +430,21 @@ function updateRawCoinExchange($marketname)
 				}
 			}
 		break;
-		case 'cryptobridge':
-			if (!exchange_get('cryptobridge', 'disabled')) {
-				$list = cryptobridge_api_query('ticker');
-				if(is_array($list) && !empty($list))
-				{
-					#dborun("UPDATE markets SET deleted=true WHERE name='cryptobridge'");
-					foreach($list as $ticker) {
-						$e = explode('_', $ticker->id);
-						if (strtoupper($e[1]) !== 'BTC')
-							continue;
-						$symbol = strtoupper($e[0]);
-						updateRawCoin('cryptobridge', $symbol);
-					}
-				}
-			}
+#		case 'cryptobridge':
+#			if (!exchange_get('cryptobridge', 'disabled')) {
+#				$list = cryptobridge_api_query('ticker');
+#				if(is_array($list) && !empty($list))
+#				{
+#					#dborun("UPDATE markets SET deleted=true WHERE name='cryptobridge'");
+#					foreach($list as $ticker) {
+#						$e = explode('_', $ticker->id);
+#						if (strtoupper($e[1]) !== 'BTC')
+#							continue;
+#						$symbol = strtoupper($e[0]);
+#						updateRawCoin('cryptobridge', $symbol);
+#					}
+#				}
+#			}
 		break;
 		case 'cryptrade':
 			if (!exchange_get('cryptrade', 'disabled')) {
