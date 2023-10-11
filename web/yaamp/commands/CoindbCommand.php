@@ -39,7 +39,7 @@ class CoindbCommand extends CConsoleCommand
 
 		} elseif ($args[0] == 'labels') {
 
-			$nbUpdated  = $this->updateCryptopiaLabels();
+#			$nbUpdated  = $this->updateCryptopiaLabels();
 			$nbUpdated += $this->updateCoinCapLabels();
 			$nbUpdated += $this->updateLiveCoinLabels();
 			$nbUpdated += $this->updateYiimpLabels("api.yiimp.eu");
